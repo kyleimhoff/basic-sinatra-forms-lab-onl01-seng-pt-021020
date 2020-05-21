@@ -9,5 +9,6 @@ get '/team' do
   @sf = params[:small_forward]
   @pf = params[:power_forward]
   @c = params[:center]
+  erb :team 
 
 end
