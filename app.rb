@@ -10,5 +10,9 @@ get '/team' do
   @pf = params[:power_forward]
   @c = params[:center]
   erb :team 
+end
+get '/newteam' do
+  
+end
 
 end
