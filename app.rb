@@ -12,7 +12,7 @@ get '/team' do
   erb :team 
 end
 get '/newteam' do
-  
+  erb :newteam
 end
 
 end
