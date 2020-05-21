@@ -1,6 +1,8 @@
 require 'sinatra/base'
 
-class App < Sinatra::Base
+class App < Sinatra::Baseget '/newteam' do
+  erb :newteam
+end
 get '/team' do 
   @name = params[:name]
   @coach = params[:coach]
@@ -11,8 +13,6 @@ get '/team' do
   @c = params[:c]
   erb :team 
 end
-get '/newteam' do
-  erb :newteam
-end
+
 
 end
